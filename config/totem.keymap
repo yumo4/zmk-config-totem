@@ -14,31 +14,13 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <locale/keys_us_international.h>
 
 #define base        0
 #define symbols     1
 #define numbers     2
 #define system      3
 #define umlaute     4
-
-
-/* § */
-#define EN_SECTION (RA(LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_S))))
-#define EN_SECT (EN_SECTION)
-/* € */
-#define EN_EURO (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_5_AND_PERCENT)))
-/* ß */
-#define EN_SHARP_S (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_S)))
-#define EN_ESZETT (EN_SHARP_S)
-#define EN_SZ (EN_SHARP_S)
-/* ä */
-#define EN_A_UMLAUT (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Q)))
-/* ö */
-#define EN_O_UMLAUT (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_P)))
-/* ü */
-#define EN_U_UMLAUT (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Y)))
-
-
 
 
 &mt {
