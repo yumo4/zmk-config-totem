@@ -2,7 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: zmk-locales
+    # - name: zmk-locales
+    - name: joelspadin 
       url-base: https://github.com/joelspadin
   projects:
     - name: zmk
@@ -12,6 +13,6 @@ manifest:
     - name: zmk-locales
       remote: joelspadin
       revision: main
+      path: zmk-locales
   self:
     path: config
-# https://github.com/joelspadin/zmk-locales/tree/main
