@@ -44,6 +44,8 @@
             tapping-term-ms = <200>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
+
+            quick-tap-ms = <199>;
         };
     };
 
