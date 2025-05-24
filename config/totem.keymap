@@ -10,18 +10,16 @@
 //
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
+#include "keys_us_international.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
-#include "keys_us_international.h"
 
 #define base        0
 #define symbols     1
 #define numbers     2
 #define system      3
 #define umlaute     4
-
 
 &mt {
     quick-tap-ms = <100>;
@@ -44,7 +42,6 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
@@ -97,10 +94,10 @@
 
         umlaute {
             bindings = <
-       &none            &none            &kp EN_SECTION  &kp EN_EURO     &none           &none            &kp EN_U_UMLAUT        &none           &kp EN_O_UMLAUT  &none
-       &kp EN_A_UMLAUT  &kp EN_ESZETT    &kp LEFT_SHIFT  &none           &none           &none            &none                  &kp LEFT_SHIFT  &none            &none
-&none  &none            &none            &none           &none           &none           &none            &none                  &none           &none            &none  &none
-                        &none            &lt 1 SPACE     &lt 3 ESCAPE    &lt 4 BACKSPACE &lt 2 ENTER      &none
+       &none            &none          &kp EN_SECTION  &kp EN_EURO  &none           &none            &kp EN_U_UMLAUT  &none           &kp EN_O_UMLAUT  &none
+       &kp EN_A_UMLAUT  &kp EN_ESZETT  &kp LEFT_SHIFT  &none        &none           &none            &none            &kp LEFT_SHIFT  &none            &none
+&none  &none            &none          &none           &none        &none           &none            &none            &none           &none            &none  &none
+                                       &none           &lt 1 SPACE  &lt 3 ESCAPE    &lt 4 BACKSPACE  &lt 2 ENTER      &none
             >;
         };
     };
