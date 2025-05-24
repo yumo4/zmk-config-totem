@@ -40,12 +40,12 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             tapping-term-ms = <200>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
 
-            quick-tap-ms = <199>;
+            quick-tap-ms = <150>;
         };
     };
 
