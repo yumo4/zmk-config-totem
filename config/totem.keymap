@@ -49,7 +49,14 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        caps-word {
+            bindings = <&caps_word>;
+            key-positions = <17 12>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
