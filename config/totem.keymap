@@ -36,6 +36,32 @@
 
 / {
     behaviors {
+      hml: left_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LEFT_HOMEROW_MODS";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-on-release;
+        };
+        
+        // Right-hand homerow mods
+        hmr: right_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RIGHT_HOMEROW_MODS";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>;
+            hold-trigger-on-release;
+        };
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -44,7 +70,6 @@
             tapping-term-ms = <200>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
-
             quick-tap-ms = <150>;
         };
     };
