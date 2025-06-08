@@ -36,7 +36,7 @@
 
 / {
     behaviors {
-      hml: left_homerow_mods {
+        hml: left_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "LEFT_HOMEROW_MODS";
             #binding-cells = <2>;
@@ -45,11 +45,13 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;
         };
-        
+
         // Right-hand homerow mods
+
         hmr: right_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "RIGHT_HOMEROW_MODS";
@@ -59,9 +61,11 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
         };
+
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -70,6 +74,7 @@
             tapping-term-ms = <200>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
+
             quick-tap-ms = <150>;
         };
     };
@@ -89,10 +94,10 @@
         base {
             display-name = "base";
             bindings = <
-           &kp Q       &kp W       &kp E             &kp R               &kp T           &kp Y            &kp U               &kp I             &kp O           &kp P
-           &hm LGUI A  &hm LALT S  &hm LEFT_SHIFT D  &hm LEFT_CONTROL F  &kp G           &kp H            &hm LEFT_CONTROL J  &hm LEFT_SHIFT K  &hm LEFT_ALT L  &hm LEFT_WIN SEMICOLON
-&lt 3 TAB  &kp Z       &kp X       &kp C             &kp V               &kp B           &kp N            &kp M               &kp COMMA         &kp DOT         &kp SLASH               &kp APOSTROPHE
-                                   &none             &lt 1 SPACE         &lt 3 ESCAPE    &lt 4 BACKSPACE  &lt 2 ENTER         &none
+           &kp Q        &kp W        &kp E              &kp R                &kp T           &kp Y            &kp U                &kp I              &kp O            &kp P
+           &hml LGUI A  &hml LALT S  &hml LEFT_SHIFT D  &hml LEFT_CONTROL F  &kp G           &kp H            &hmr LEFT_CONTROL J  &hmr LEFT_SHIFT K  &hmr LEFT_ALT L  &hmr LEFT_WIN SEMICOLON
+&lt 3 TAB  &kp Z        &kp X        &kp C              &kp V                &kp B           &kp N            &kp M                &kp COMMA          &kp DOT          &kp SLASH                &kp APOSTROPHE
+                                     &none              &lt 1 SPACE          &lt 3 ESCAPE    &lt 4 BACKSPACE  &lt 2 ENTER          &none
             >;
         };
 
