@@ -20,12 +20,14 @@
 #define numbers     2
 #define system      3
 #define umlaute     4
-
-
 #define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32
+
 // Right hand keys (including right thumb keys)
+
 #define KEYS_R 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35
+
 // All thumb keys
+
 #define THUMBS 30 31 32 33 34 35
 
 &mt {
@@ -121,10 +123,10 @@
         numbers {
             display-name = "numbers";
             bindings = <
-       &kp F1                 &kp F2                 &kp F3                   &kp F4                     &kp F5             &kp F6           &kp F7                     &kp F8             &kp F9                 &kp F10
-       &hm LEFT_WIN NUMBER_1  &hm LEFT_ALT NUMBER_2  &hm LEFT_SHIFT NUMBER_3  &hm LEFT_CONTROL NUMBER_4  &kp NUMBER_5       &kp NUMBER_6     &hm LEFT_CONTROL NUMBER_7  &hm LEFT_SHIFT N8  &hm LEFT_ALT NUMBER_9  &hm LEFT_WIN NUMBER_0
-&none  &kp F11                &none                  &none                    &none                      &none              &kp UNDER        &kp EQUAL                  &kp COMMA          &kp PERIOD             &kp F12                &none
-                                                     &none                    &lt 1 SPACE                &lt 3 BACKSPACE    &lt 4 BACKSPACE  &lt 2 ENTER                &none
+       &kp F1                  &kp F2                  &kp F3                    &kp F4                      &kp F5             &kp F6           &kp F7                      &kp F8              &kp F9                  &kp F10
+       &hml LEFT_WIN NUMBER_1  &hml LEFT_ALT NUMBER_2  &hml LEFT_SHIFT NUMBER_3  &hml LEFT_CONTROL NUMBER_4  &kp NUMBER_5       &kp NUMBER_6     &hmr LEFT_CONTROL NUMBER_7  &hmr LEFT_SHIFT N8  &hmr LEFT_ALT NUMBER_9  &hmr LEFT_WIN NUMBER_0
+&none  &kp F11                 &none                   &none                     &none                       &none              &kp UNDER        &kp EQUAL                   &kp COMMA           &kp PERIOD              &kp F12                 &none
+                                                       &none                     &lt 1 SPACE                 &lt 3 BACKSPACE    &lt 4 BACKSPACE  &lt 2 ENTER                 &none
             >;
         };
 
