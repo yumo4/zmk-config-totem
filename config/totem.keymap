@@ -113,10 +113,10 @@
         symbols {
             display-name = "symbols";
             bindings = <
-               &none            &kp AT_SIGN     &kp HASH          &kp DOLLAR            &kp PERCENT     &kp CARET        &kp AMPERSAND          &kp ASTERISK       &kp BACKSLASH    &none
-               &kp EXCLAMATION  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp GRAVE       &kp MINUS        &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp EQUAL
-&kp LESS_THAN  &none            &none           &none             &none                 &none           &none            &none                  &kp COMMA          &kp PERIOD       &kp SLASH  &kp GREATER_THAN
-                                                &none             &lt 1 SPACE           &lt 3 ESCAPE    &lt 4 BACKSPACE  &lt 2 ENTER            &none
+               &none                  &kp AT_SIGN               &kp HASH                      &kp DOLLAR                          &kp PERCENT     &kp CARET        &kp AMPERSAND                        &kp ASTERISK                   &kp BACKSLASH              &none
+               &hml LGUI EXCLAMATION  &hml LEFT_ALT LEFT_BRACE  &hml LEFT_SHIFT LEFT_BRACKET  &hml LEFT_CONTROL LEFT_PARENTHESIS  &kp GRAVE       &kp MINUS        &hmr LEFT_CONTROL RIGHT_PARENTHESIS  &hmr LEFT_SHIFT RIGHT_BRACKET  &hmr LEFT_ALT RIGHT_BRACE  &hmr LGUI EQUAL
+&kp LESS_THAN  &none                  &none                     &none                         &none                               &none           &none            &none                                &kp COMMA                      &kp PERIOD                 &kp SLASH        &kp GREATER_THAN
+                                                                &none                         &lt 1 SPACE                         &lt 3 ESCAPE    &lt 4 BACKSPACE  &lt 2 ENTER                          &none
             >;
         };
 
